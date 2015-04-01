@@ -1,0 +1,78 @@
+@charset "utf-8";
+.message-box{
+    display: none;
+    min-height: 60px;
+    width: 280px;
+    z-index: 99999;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    border-radius: 10px;
+    color: #ffffff;
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    margin: -140px;
+    background: #fff;
+    color: #000;
+    padding: 5px 10px 10px 10px;
+}
+
+.message-box_cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=10);
+    opacity: 0.1;
+}
+.message-box_title{
+    width: 100%;
+    color: #444;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 0px;
+    border-bottom: 1px #cdcdcd solid;
+}
+.message-box_content{
+    margin: 5px;
+    line-height: 1.3em;
+}
+.message-box_button-box{
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.message-box_button-button{
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+.message-box_button-button.center{
+    float: left;
+    background: #FF8737;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 33%;
+}
+.message-box_button-button.left{
+    float: left;
+    margin-left: 15%;
+    background: #FF8737;
+    color: #fff;
+    border-radius: 5px;
+}
+.message-box_button-button.right{
+    float: right;
+    margin-right: 15%;
+    background: #b70000;
+    color: #fff;
+    border-radius: 5px;
+}
